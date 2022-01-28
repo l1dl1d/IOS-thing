@@ -7,11 +7,10 @@ var schooling = 11
 print(schooling)
 
 //:  Now imagine you just completed an additional year of school, and update the `schooling` variable accordingly. Print `schooling` to the console.
-var schooling = 11 + 1
+schooling = 12
 print(schooling)
-
 //:  Does the above code compile? Why is this different than trying to update a constant? Print your explanation to the console using the `print` function.
-
+print("it does compile and it's different from a constant because a constant stays constant and cant be changed while a variable is made if you know you're goiug to change the value later on.")
 
 /*:
 [Previous](@previous)  |  page 3 of 10  |  [Next: App Exercise - Step Count](@next)
