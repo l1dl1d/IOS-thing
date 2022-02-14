@@ -11,12 +11,25 @@ struct GPS {
 let somePlace = GPS(latitude: 51.514004, longitude: 0.125226)
 
 //:  In Structs, Instance, and Default Values, you also created a `Book` struct with properties `title`, `author`, `pages`, and `price`. Create this struct again without default values. Give each property the appropriate type. Declare your `favoriteBook` instance and pass in the values of your favorite book using the memberwise initializer. Print a statement about your favorite book using `favoriteBook`'s properties.
-
-
+struct Book{
+    var title: String
+    var author: String
+    var pages: Int
+    var price: Double
+    
+}
+var myfav = Book(title: "good will", author: "humans", pages: 2, price: 100.99)
+print("my favorite book is \(myfav.title) by \(myfav.author) because its only \(myfav.pages) long and cost only \(myfav.price) dollars")
 /*:
  Make a `Laptop` struct with three variable properties, `screenSize` of type `Int`, `repairCount` of type `Int`, and `yearPurchased` of type `Int`. Give `screenSize` a default value of `13` and `repairCount` a default value of `0`, and leave `yearPurchased` without a default value. Declare two instances of `Laptop`, using the two provided memberwise initializers.
  */
-
+struct Laptop {
+    var screenSize: Int = 13
+    var repairCount: Int = 0
+    var yearPurchased: Int
+}
+var mylap = Laptop(screenSize: 13, repairCount: 2, yearPurchased: 7)
+var mytop = Laptop(yearPurchased: 8)
 
 /*:
  Make a `Height` struct with two variable properties, `heightInInches` and `heightInCentimeters`. Both should be of type `Double`.
@@ -25,7 +38,10 @@ let somePlace = GPS(latitude: 51.514004, longitude: 0.125226)
 
  - Example: If you use the initializer for inches to pass in a height of 65, the initializer should set `heightInInches` to 65 and `heightInCentimeters` to 165.1.
  */
-
+struct Height{
+    var heightInInches: Double
+    var heightInCentimeters: Double
+}
 
 //:  Now create a variable instance of `Height` called `someonesHeight`. Use the initializer for inches to set the height to 65. Print out the property for height in centimeters and verify that it is equal to 165.1.
 
