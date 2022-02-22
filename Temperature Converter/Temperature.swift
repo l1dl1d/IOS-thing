@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct temperature{
+struct Temperature{
     var tempInFahrenheit: Double
     var tempInCelsius: Double
     init(fahrenheit: Double){
