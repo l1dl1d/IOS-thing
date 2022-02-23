@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var switchTemp: UISwitch!
     @IBOutlet weak var getTemp: UITextField!
     var temp: Temperature?
     override func
         viewDidLoad() {
-            //changeTemp()
+            
         super.viewDidLoad()
         let currentTemp = Double(getTemp.text!)
         if switchTemp.isOn {
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
         } else {
             temp = Temperature(fahrenheit: currentTemp!)
         }
+        changeTemp()
         // Do any additional setup after loading the view.
     }
 
@@ -29,14 +31,22 @@ class ViewController: UIViewController {
     
 
     @IBAction func updateTemp(_ sender: Any) {
+        let currentTemp = Double(getTemp.text!)
+        if switchTemp.isOn {
+            temp = Temperature(celsius: currentTemp!)
+            
+        } else {
+            temp = Temperature(fahrenheit: currentTemp!)
+        }
+        changeTemp()
     }
     
     func changeTemp(){
         if switchTemp.isOn{
-            getTemp.text = "\(temp!.tempInFahrenheit)"
+            tempLabel.text = "\(temp!.tempInFahrenheit)"
         }
         else{
-            getTemp.text = "\(temp!.tempInCelsius)"
+            tempLabel.text = "\(temp!.tempInCelsius)"
         }
     }
 }

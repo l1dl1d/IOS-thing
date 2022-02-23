@@ -63,6 +63,7 @@
                     <connections>
                         <outlet property="getTemp" destination="D1p-Ra-iIp" id="3xc-VX-Q1F"/>
                         <outlet property="switchTemp" destination="bgp-Xb-Obe" id="p2k-4o-yTn"/>
+                        <outlet property="tempLabel" destination="ian-mq-bs3" id="9Bz-Tn-Y2b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
