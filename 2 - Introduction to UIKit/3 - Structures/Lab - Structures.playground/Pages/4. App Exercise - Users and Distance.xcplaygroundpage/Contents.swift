@@ -34,7 +34,6 @@ struct Distance{
 
 //:  Now create an instance of `Distance` called `mile`. Use the initializer for meters to set the distance to 1600. Print out the property for feet and verify that it is equal to 5249.344.
 
-
 //:  Now create another instance of `Distance` and give it some other distance. Ensure that both properties are set correctly.
 
 
