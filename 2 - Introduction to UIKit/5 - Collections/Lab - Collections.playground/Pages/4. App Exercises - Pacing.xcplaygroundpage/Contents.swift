@@ -22,7 +22,9 @@ if let removeSprint = paces.removeValue(forKey: "Sprint"){
 }
 
 //:  When a user chooses a pace, you want the app to print a statement stating that it will keep him/her on pace. Imagine a user chooses "Medium." Accessing the value from the dictionary, print a statement saying "Okay! I'll keep you at a <INSERT PACE VALUE HERE> minute mile pace."
-if let 
+if let pace = paces["Medium"]{
+    print("Okay! I'll keep you at a \(pace) minute mile pace.")
+}
 
 /*:
  _Copyright © 2021 Apple Inc._
