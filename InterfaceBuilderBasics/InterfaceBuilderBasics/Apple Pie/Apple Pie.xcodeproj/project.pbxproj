@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2ACDDE27D92EE40055BBF2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2ACDDD27D92EE40055BBF2 /* Game.swift */; };
 		CA5A1C2127D25DC90096E2B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A1C2027D25DC90096E2B5 /* AppDelegate.swift */; };
 		CA5A1C2327D25DC90096E2B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A1C2227D25DC90096E2B5 /* SceneDelegate.swift */; };
 		CA5A1C2527D25DC90096E2B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A1C2427D25DC90096E2B5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA2ACDDD27D92EE40055BBF2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		CA5A1C1D27D25DC90096E2B5 /* Apple Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A1C2027D25DC90096E2B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5A1C2227D25DC90096E2B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CA5A1C2027D25DC90096E2B5 /* AppDelegate.swift */,
 				CA5A1C2227D25DC90096E2B5 /* SceneDelegate.swift */,
 				CA5A1C2427D25DC90096E2B5 /* ViewController.swift */,
+				CA2ACDDD27D92EE40055BBF2 /* Game.swift */,
 				CA5A1C2627D25DC90096E2B5 /* Main.storyboard */,
 				CA5A1C2927D25DCD0096E2B5 /* Assets.xcassets */,
 				CA5A1C2B27D25DCD0096E2B5 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				CA5A1C2527D25DC90096E2B5 /* ViewController.swift in Sources */,
 				CA5A1C2127D25DC90096E2B5 /* AppDelegate.swift in Sources */,
 				CA5A1C2327D25DC90096E2B5 /* SceneDelegate.swift in Sources */,
+				CA2ACDDE27D92EE40055BBF2 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
