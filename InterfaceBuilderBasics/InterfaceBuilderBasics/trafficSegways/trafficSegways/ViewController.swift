@@ -10,8 +10,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func greenButtonTaped(_ sender: Any) {
+        if segueSwitch.isOn {
+            performSegue(withIdentifier: "green", sender: nil)
+        }
     }
     @IBAction func yellowButtonTaped(_ sender: Any) {
+        if segueSwitch.isOn {
+            performSegue(withIdentifier: "yellow", sender: nil)
+        }
     }
     @IBOutlet weak var segueSwitch: UISwitch!
     @IBOutlet weak var outletToButton: UITextField!
@@ -19,21 +25,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func unwindTolked(unwindsegth: UIStoryboardSegue) {
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        segue.destination.navigationItem.title = outletToButton.text
-    }
-    override func performSegue(withIdentifier identifier: "Yellow", sender: nil) {
-        
-    }
-    override func performSegue(withIdentifier identifier: "green", sender: nil) {
-        
-    }
-
-
 }
 
