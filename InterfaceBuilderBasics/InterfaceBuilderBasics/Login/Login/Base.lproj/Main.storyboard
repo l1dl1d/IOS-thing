@@ -54,6 +54,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QHZ-8D-Qck"/>
+                    <connections>
+                        <outlet property="username" destination="LPz-n6-Kaf" id="2ns-zC-FTh"/>
+                        <segue destination="Dsx-LN-e2M" kind="show" id="dxL-D0-Yzn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +73,7 @@
                         <viewLayoutGuide key="safeArea" id="soI-xO-eBs"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Lml-1f-ZSa"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Lml-1f-ZSa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7R-0N-eCN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,6 +98,9 @@
             <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MrL-Td-YQT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
