@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
-                                    <segue destination="Dsx-LN-e2M" kind="show" id="MrL-Td-YQT"/>
+                                    <segue destination="Dsx-LN-e2M" kind="show" identifier="forgot" id="MrL-Td-YQT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDx-XI-qhZ">
@@ -30,6 +30,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Username?"/>
+                                <connections>
+                                    <action selector="forgotUsernameTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZL-KV-6QS"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="req-kl-8n4">
                                 <rect key="frame" x="20" y="391" width="374" height="34"/>
@@ -48,6 +51,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="forgotPasswordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADz-71-fPy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -55,6 +61,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="QHZ-8D-Qck"/>
                     <connections>
+                        <outlet property="forgotPassword" destination="pJ6-Qa-hQQ" id="4Yt-IN-hHR"/>
+                        <outlet property="forgotUsername" destination="PDx-XI-qhZ" id="QBV-50-mj6"/>
                         <outlet property="username" destination="LPz-n6-Kaf" id="2ns-zC-FTh"/>
                         <segue destination="Dsx-LN-e2M" kind="show" id="dxL-D0-Yzn"/>
                     </connections>
