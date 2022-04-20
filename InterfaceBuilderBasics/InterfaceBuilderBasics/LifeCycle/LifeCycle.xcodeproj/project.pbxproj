@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0B41F52810932A0099F046 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B41F42810932A0099F046 /* SecondViewController.swift */; };
 		CAFFAE7C280F361900BACE39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFFAE7B280F361900BACE39 /* AppDelegate.swift */; };
 		CAFFAE7E280F361900BACE39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFFAE7D280F361900BACE39 /* SceneDelegate.swift */; };
 		CAFFAE80280F361900BACE39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFFAE7F280F361900BACE39 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA0B41F42810932A0099F046 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CAFFAE78280F361900BACE39 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFFAE7B280F361900BACE39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFFAE7D280F361900BACE39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				CAFFAE7D280F361900BACE39 /* SceneDelegate.swift */,
 				CAFFAE7F280F361900BACE39 /* ViewController.swift */,
 				CAFFAE81280F361900BACE39 /* Main.storyboard */,
+				CA0B41F42810932A0099F046 /* SecondViewController.swift */,
 				CAFFAE84280F361C00BACE39 /* Assets.xcassets */,
 				CAFFAE86280F361C00BACE39 /* LaunchScreen.storyboard */,
 				CAFFAE89280F361C00BACE39 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0B41F52810932A0099F046 /* SecondViewController.swift in Sources */,
 				CAFFAE80280F361900BACE39 /* ViewController.swift in Sources */,
 				CAFFAE7C280F361900BACE39 /* AppDelegate.swift in Sources */,
 				CAFFAE7E280F361900BACE39 /* SceneDelegate.swift in Sources */,
