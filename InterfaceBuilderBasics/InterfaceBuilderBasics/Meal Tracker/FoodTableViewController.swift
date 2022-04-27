@@ -17,7 +17,11 @@ class FoodTableViewController: UITableViewController {
         Meal(name: "foul", food: [
         Food(name: "beans", description: "brown"),
         Food(name: "cucumbers", description: "green"),
-        Food(name: "tomatos", description: "red")])]
+        Food(name: "tomatos", description: "reder")]),
+        Meal(name: "salad", food: [
+        Food(name: "lettuce", description: "crunchy"),
+        Food(name: "avocado", description: "mushy"),
+        Food(name: "carrots", description: "orange")])]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,20 +36,25 @@ class FoodTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return meals.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return meals[section].food.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Food", for: indexPath)
+        cell.textLabel?.text = meals[indexPath.section].food[indexPath.row].name
+        cell.detailTextLabel?.text = meals[indexPath.section].food[indexPath.row].description
 
         // Configure the cell...
 
         return cell
+    }
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return meals[section].name
     }
 }
