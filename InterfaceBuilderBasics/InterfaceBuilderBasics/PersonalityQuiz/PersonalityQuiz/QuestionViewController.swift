@@ -8,6 +8,41 @@
 import UIKit
 
 class QuestionViewController: UITableViewController {
+    var questions: [Question] = [
+      Question(
+        text: "Which food do you like the most?",
+        type: .single,
+        answers: [
+          Answer(text: "Steak", type: .cat),
+          Answer(text: "Fish", type: .cockroach),
+          Answer(text: "Bananas", type: .gorilla),
+          Answer(text: "lettuce", type: .butterfly)
+        ]
+      ),
+
+      Question(
+        text: "Which activities do you enjoy?",
+        type: .multiple,
+        answers: [
+          Answer(text: "Jumping", type: .butterfly),
+          Answer(text: "Sleeping", type: .cockroach),
+          Answer(text: "boxing", type: .gorilla),
+          Answer(text: "Sleeping", type: .cat)
+        ]
+      ),
+
+      Question(
+        text: "How much do you enjoy car rides?",
+        type: .ranged,
+        answers: [
+          Answer(text: "I fell average about them", type: .cockroach),
+          Answer(text: "I get a little nervous", type: .gorilla),
+          Answer(text: "I barely notice them", type: .butterfly),
+          Answer(text: "I dislike them", type: .cat)
+        ]
+      )
+    ]
+    var questionIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
