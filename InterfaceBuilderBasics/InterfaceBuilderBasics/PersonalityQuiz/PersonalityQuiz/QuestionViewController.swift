@@ -8,6 +8,11 @@
 import UIKit
 
 class QuestionViewController: UITableViewController {
+    @IBOutlet weak var singleStackView: UIStackView!
+    @IBOutlet weak var singleButton1: UIButton!
+    @IBOutlet weak var multipleStackView: UIStackView!
+    @IBOutlet weak var rangedStackView: UIStackView!
+    
     var questions: [Question] = [
       Question(
         text: "Which food do you like the most?",
@@ -46,6 +51,28 @@ class QuestionViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
+       }
+
+       func updateUI() {
+           singleStackView.isHidden = true
+               multipleStackView.isHidden = true
+               rangedStackView.isHidden = true
+
+               navigationItem.title = "Question #\(questionIndex + 1)"
+
+               let currentQuestion = questions[questionIndex]
+
+               switch currentQuestion.type {
+               case .single:
+                   singleStackView.isHidden = false
+               case .multiple:
+                   multipleStackView.isHidden = false
+               case .ranged:
+                   rangedStackView.isHidden = false
+               }
+
+       }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -251,6 +251,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="BUz-DJ-ePE"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="CKD-ey-vUr" id="7nz-9c-AQU"/>
+                        <outlet property="rangedStackView" destination="kJa-4C-sRw" id="7VG-RL-orP"/>
+                        <outlet property="singleButton1" destination="Ydb-wa-ON8" id="jU0-vk-Igh"/>
+                        <outlet property="singleStackView" destination="FFO-Qg-V0E" id="JFo-gq-evz"/>
                         <segue destination="Dg0-FX-ekf" kind="show" id="ayR-Ci-pfg"/>
                     </connections>
                 </viewController>
