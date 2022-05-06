@@ -100,21 +100,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pqt-kZ-SIu" eventType="touchUpInside" id="cYO-DG-uWc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBS-BQ-sDw">
                                         <rect key="frame" x="0.0" y="31" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pqt-kZ-SIu" eventType="touchUpInside" id="tWc-sO-jMm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1z-d8-7ZJ">
                                         <rect key="frame" x="0.0" y="62" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pqt-kZ-SIu" eventType="touchUpInside" id="U00-KR-vp7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY8-IF-S7V">
                                         <rect key="frame" x="0.0" y="93" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pqt-kZ-SIu" eventType="touchUpInside" id="img-Av-6He"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -251,9 +263,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="BUz-DJ-ePE"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="Qpg-7I-MiV" id="lyU-ML-oTE"/>
+                        <outlet property="multiLabel2" destination="9y7-om-3WG" id="Uyy-FC-4hR"/>
+                        <outlet property="multiLabel3" destination="kYN-aR-Up7" id="JM5-Dp-YdE"/>
+                        <outlet property="multiLabel4" destination="gta-Rb-ywB" id="jZT-t1-NF4"/>
+                        <outlet property="multiSwitch1" destination="sUD-iB-ar0" id="yg5-ta-8sg"/>
+                        <outlet property="multiSwitch2" destination="eF5-aX-Afu" id="SDa-5w-xUP"/>
+                        <outlet property="multiSwitch3" destination="P0D-mD-mrM" id="7Ym-lx-GaW"/>
+                        <outlet property="multiSwitch4" destination="gE6-nW-6pz" id="nC8-PS-0cC"/>
                         <outlet property="multipleStackView" destination="CKD-ey-vUr" id="7nz-9c-AQU"/>
+                        <outlet property="questionLabel" destination="jPL-WV-nvH" id="ghO-xp-eyo"/>
+                        <outlet property="questionProgressView" destination="J1I-TF-idK" id="5r7-Jw-xFB"/>
+                        <outlet property="rangedLabel1" destination="Ztf-be-J7L" id="jiA-Mv-vKj"/>
+                        <outlet property="rangedLabel2" destination="DBp-hu-3Uf" id="MwB-1j-8fT"/>
                         <outlet property="rangedStackView" destination="kJa-4C-sRw" id="7VG-RL-orP"/>
                         <outlet property="singleButton1" destination="Ydb-wa-ON8" id="jU0-vk-Igh"/>
+                        <outlet property="singleButton2" destination="LBS-BQ-sDw" id="NBs-U5-fYD"/>
+                        <outlet property="singleButton3" destination="Y1z-d8-7ZJ" id="WGJ-8b-QKt"/>
+                        <outlet property="singleButton4" destination="sY8-IF-S7V" id="NIX-pX-DXa"/>
                         <outlet property="singleStackView" destination="FFO-Qg-V0E" id="JFo-gq-evz"/>
                         <segue destination="Dg0-FX-ekf" kind="show" id="ayR-Ci-pfg"/>
                     </connections>
