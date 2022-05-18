@@ -276,6 +276,7 @@
                         <outlet property="questionProgressView" destination="J1I-TF-idK" id="5r7-Jw-xFB"/>
                         <outlet property="rangedLabel1" destination="Ztf-be-J7L" id="jiA-Mv-vKj"/>
                         <outlet property="rangedLabel2" destination="DBp-hu-3Uf" id="MwB-1j-8fT"/>
+                        <outlet property="rangedSlider" destination="6XE-mk-LCT" id="T8k-Yr-B7S"/>
                         <outlet property="rangedStackView" destination="kJa-4C-sRw" id="7VG-RL-orP"/>
                         <outlet property="singleButton1" destination="Ydb-wa-ON8" id="jU0-vk-Igh"/>
                         <outlet property="singleButton2" destination="LBS-BQ-sDw" id="NBs-U5-fYD"/>

@@ -8,6 +8,7 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
+    @IBOutlet weak var rangedSlider: UISlider!
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet weak var singleStackView: UIStackView!
     @IBOutlet weak var singleButton1: UIButton!
@@ -89,6 +90,8 @@ class QuestionViewController: UIViewController {
         
     }
     
+    @IBAction func rangedAnswerButtonPressed() {
+    }
     func updateUI() {
                singleStackView.isHidden = true
                multipleStackView.isHidden = true
