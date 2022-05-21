@@ -8,9 +8,31 @@
 import UIKit
 
 class ResultsViewController: UITableViewController {
+    init?(coder: NSCoder, responses: [Answer]) {
+        self.responses = responses
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    var responses: [Answer]
+    
+    
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        calculatePersonalityResult()
+        }
+
+        func calculatePersonalityResult() {
+            let frequencyOfAnswers = responses.reduce(into: [:]) { (counts, answer) in
+                counts[answer.type, default: 0] += 1
+            }
+        }
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -20,13 +42,12 @@ class ResultsViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }

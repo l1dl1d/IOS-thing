@@ -283,7 +283,7 @@
                         <outlet property="singleButton3" destination="Y1z-d8-7ZJ" id="WGJ-8b-QKt"/>
                         <outlet property="singleButton4" destination="sY8-IF-S7V" id="NIX-pX-DXa"/>
                         <outlet property="singleStackView" destination="FFO-Qg-V0E" id="JFo-gq-evz"/>
-                        <segue destination="Dg0-FX-ekf" kind="show" id="ayR-Ci-pfg"/>
+                        <segue destination="Dg0-FX-ekf" kind="show" destinationCreationSelector="showResults:" id="ayR-Ci-pfg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNN-i9-KVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
