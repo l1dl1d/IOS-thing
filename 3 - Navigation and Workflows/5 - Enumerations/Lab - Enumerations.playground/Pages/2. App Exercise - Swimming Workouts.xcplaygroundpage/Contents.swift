@@ -6,10 +6,26 @@
  Previous app exercises have introduced the idea that your fitness tracking app may allow users to track swimming workouts. Create a `SwimmingWorkout` struct below with properties for `distance`, `time`, and `stroke`. `distance` and `time` should be of type `Double` and will represent distance in meters and time in seconds, and `stroke` should be of type `String`.
  */
 
+import Darwin
+struct SwimmingWorkout {
+    var distance: Double
+    var time: Double
+    var stroke: Stroke
+    var freestyleWorkouts: SwimmingWorkout
+    var butterflyWorkouts: SwimmingWorkout
+    var backstrokeWorkouts: SwimmingWorkout
+    var breaststrokeWorkouts: SwimmingWorkout
+    enum Stroke{
+        case freestyle
+        case butterfly
+        case backstroke
+        case breaststroke
+    }
+}
 
 //:  Allowing `stroke` to be of type `String` isn't very type-safe. Inside the `SwimmingWorkout` struct, create an enum called `Stroke` that has cases for `freestyle`, `butterfly`, `backstroke`, and `breaststroke`. Change the type of `stroke` from `String` to `Stroke`. Create two instances of `SwimmingWorkout` objects.
-
-
+let swim = SwimmingWorkout(distance: 25.12, time: 3.5, stroke: .freestyle)
+let swim2 = SwimmingWorkout(distance: 10.32, time: 1.13, stroke: .backstroke)
 //:  Now imagine you want to log swimming workouts separately based on the swimming stroke. You might use arrays as static variables on `SwimmingWorkout` for this. Add four static variables, `freestyleWorkouts`, `butterflyWorkouts`, `backstrokeWorkouts`, and `breaststrokeWorkouts`, to `SwimmingWorkout` above. Each should be of type `[SwimmingWorkout]` and should default to empty arrays.
  
 
